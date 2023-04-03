@@ -1,0 +1,220 @@
+body {
+    background: #fafafa;
+    padding: 0 1rem;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+}
+
+footer {
+    margin: 3rem auto 5rem;
+}
+
+ul {
+    padding-inline-start: 1.5rem;
+    margin: 0
+}
+
+:root {
+    font: normal 16px 'Sofia Sans';
+    color: #333;
+    --pastel-red: #FD8A8A;
+    --pastel-yellow: #F1F7B5;
+    --pastel-green: #A8D1D1;
+    --pastel-blue: #9EA1D4;
+}
+
+hr {
+    width: 100%
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    transition: all 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 2px #00000020;
+}
+
+
+.helloCard {
+    margin: 1rem auto;
+    padding: 1rem 2.5rem 1rem 1.5rem !important;
+}
+
+.sectionTitle {
+    margin: 2rem auto 0.5rem
+}
+
+.experienceDate {
+    opacity: 0.8;
+    margin-top: 0.5rem;
+
+}
+
+.contacts svg.icon {
+    width: 1.25rem;
+    height: 1.25rem
+}
+
+.contacts>a,
+.contacts>div {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+a.cvPdf {
+    outline: 1px solid #999;
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.project {
+    justify-content: flex-start !important;
+    margin-top: 0.5rem;
+}
+
+
+.project h3 {
+
+    display: inline
+}
+
+.project a {
+    text-decoration: none;
+    background: #eee;
+    padding: 3px;
+}
+
+.card,
+.cardContainer>div {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00000030;
+    background: #fff;
+    display: grid;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+.cardContainer:not(.col-2)>div {
+    padding: 1.5rem;
+}
+
+.pill {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.pill.blue,
+.pillBox li.blue {
+    background: var(--pastel-blue);
+    color: #fff
+}
+
+.pill.red,
+.pillBox li.red {
+    background: var(--pastel-red);
+    color: #fff
+}
+
+.pill.green,
+.pillBox li.green {
+    background: var(--pastel-green);
+    color: #333
+}
+
+.pill.yellow,
+.pillBox li.yellow {
+    background: var(--pastel-yellow);
+    color: #333
+}
+
+.pillBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.pillBox.outline li {
+    border: 1px solid #00000040
+}
+
+.pillBox li {
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+
+.flex,
+.flex-centre {
+    display: flex
+}
+
+.grid,
+.grid-centre {
+    display: grid
+}
+
+@media (min-width: 650px) {
+    .helloCard {
+        margin: 1rem 3rem;
+        padding: 1rem 2.5rem 1rem 1.5rem !important;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        padding: 0 3rem;
+    }
+
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardContainer:not(.col-2)>div {
+        padding: 2rem;
+    }
+}
+
+.flex-centre,
+.grid-centre {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.padding-1 {
+    padding: 1rem
+}
+
+h3 {
+    font-weight: normal;
+}
