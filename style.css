@@ -82,10 +82,17 @@ a:hover {
 a.cvPdf {
     outline: 1px solid #999;
     display: block;
-    margin: 1rem auto;
     width: fit-content;
     padding: 5px;
     text-decoration: none;
+}
+
+.downloads{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem auto;
+    gap: 0.5rem;
 }
 
 .project {
@@ -93,16 +100,15 @@ a.cvPdf {
     margin-top: 0.5rem;
 }
 
-
 .project h3 {
-
     display: inline
 }
 
-.project a {
+a.linkBtn {
     text-decoration: none;
     background: #eee;
     padding: 3px;
+    height: fit-content;
 }
 
 .card,
@@ -184,6 +190,11 @@ a.cvPdf {
     .helloCard {
         margin: 1rem 3rem;
         padding: 1rem 2.5rem 1rem 1.5rem !important;
+    }
+    .downloads{
+        display: flex;
+        margin: 1rem auto;
+        gap: 0.5rem;
     }
 }
 
